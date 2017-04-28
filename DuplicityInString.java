@@ -6,7 +6,7 @@ public static void main(String []args){
          
 String[] res = {"4","4","6","5"};
 
-HashMap<String,Integer> hm=new HashMap<String,Integer>(); 
+LinkedHashMap<String,Integer> hm=new LinkedHashMap<String,Integer>(); 
           
 for(String str : res) {
     hm.put(str,hm.containsKey(str) ? (hm.get(str) + 1) : 1); 
